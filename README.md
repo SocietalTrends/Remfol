@@ -1,3 +1,3 @@
 # Remfol
-Twitterにおけるリムーブとフォローのツール/n
+Twitterにおけるリムーブとフォローのツール<br>
 タスクスケジュールには、Heroku上でAPSchedulerを使用。
