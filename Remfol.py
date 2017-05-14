@@ -25,7 +25,7 @@ def Init():
     return Twitter(auth = OAuth(token, token_secret, consumer_key, consumer_secret)), f_maximum, r_maximum
 
 def remove(t, maximum, me):    
-    # リムーブで使用するリストを取得する関数
+    # リムーブする関数で使用するリストをフォロワー100人ごとに取得する関数
 
     print("It's a remove turn now.")
     current = 0
@@ -38,7 +38,7 @@ def remove(t, maximum, me):
     _list = list()
 
     while current < 7:
-        #フォロワーのリスト 200 // 7*200= 1400 users
+        #フォロワーのリスト 200 とりあえず 7*200= 1400 usersを対象
         friends = t.friends.list(screen_name= _me, cursor=_cursor, count= _count)
         current += 1
         for friend in friends['users']:
