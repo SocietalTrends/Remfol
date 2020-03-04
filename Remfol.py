@@ -71,7 +71,7 @@ def destroy(_list, num, maximum):
             sleep(random.randint(20, 25))
     return num
 
-def follow(t, maximum, me, user='SocietalTrends'):
+def follow(t, maximum, me, user='ゆーざー名'):
     # リストを取得し、自分のフォロワーのフォロワーをフォローする関数
     # ユーザーを選択しない場合、可能ならば自分のフォロワーをフォローする
     
